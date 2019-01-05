@@ -132,10 +132,6 @@
                     </div>
                     <!-- /.page-title-right -->
                 </div>
-                <!-- /.page-title -->
-                <!-- =================================== -->
-                <!-- Different data widgets ============ -->
-                <!-- =================================== -->
                 <div class="widget-list">
                     <div class="row">
                         <div class="col-md-12 widget-holder">
@@ -144,43 +140,27 @@
                                     <h5>Create new class</h5>
                                 </div>
                                 <!-- /.widget-heading -->
-                                <div class="widget-body clearfix">
-                                    <div class="col-md-6 mb-3 input-has-value">
-                                        <label for="validationServer02">Class name</label>
-                                        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="" required="">
-                                    </div>
-                                    <div class="col-md-6 mb-3 input-has-value">
-                                        <label for="validationServer02">Teacher</label>
-                                        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="" required="">
-                                    </div>
-                                    <div class="col-sm-4 mb-3">
-                                        <p class="text-muted">Status</p>
-                                        <div class="form-group">
-                                            <div class="radiobox">
-                                                <label>
-                                                    <input type="radio" name="radio1Option[]" value="1" checked="checked"> <span class="label-text">Active</span>
-                                                </label>
+                                <form id="createClassForm">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Class Name</label>
+                                                <input type="text" class="form-control" name="Name">
                                             </div>
-                                            <!-- /.radiobox -->
-                                            <div class="radiobox radio-success">
-                                                <label>
-                                                    <input type="radio" name="radio1Option[]" value="4"> <span class="label-text">Deactive</span>
-                                                </label>
+                                            <div class="form-group">
+                                                <label>Teacher</label>
+                                                <input type="text" class="form-control" name="Teacher">
                                             </div>
-                                            <!-- /.radiobox -->
+                                            <div class="form-group">
+                                                <label class="control-label">Status</label>
+                                                <input name="Status" type="radio" value="1"> Active
+                                                <input name="Status" type="radio" value="0"> Deactive
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn-success btn btn-submit">Submit</button>
+                                                <button type="reset" class="btn-danger btn">Cancel</button>
+                                            </div>
                                         </div>
-                                        <!-- /.form-group -->
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12 btn-list" style="padding-left:30px;">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                        <div class="col-sm-12 btn-list" style="padding-left:30px;">
-                                            <a href="class-list.html" style="color:blue;">Back to list class</a>
-                                        </div>
-                                        <!-- /.col-sm-12 -->
-                                    </div>
-                                </div>
+                                </form>
                                 <!-- /.widget-body -->
                             </div>
                             <!-- /.widget-bg -->
@@ -210,6 +190,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/class-create.js"></script>
 </body>
 
 </html>
