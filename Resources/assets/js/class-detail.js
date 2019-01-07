@@ -40,7 +40,7 @@ $(document).ready(function () {
         success: function (result) {
             var content = "";
             var content2 = "";
-            var content3 = "";
+            var content3 = "<option value=\"\" disabled selected>Select Subject</option>\n";
             for (var i in result.clazzSubject){
                 if(result.clazzSubject[i].subject.status != 0 && result.clazzSubject[i].status != 0){
                     content2 += "<tr>";
