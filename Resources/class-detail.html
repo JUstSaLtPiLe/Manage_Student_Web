@@ -30,6 +30,10 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <!-- Head Libs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link href="assets/css/style2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-multiselect.css" type="text/css"/>
+    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="header-centered sidebar-horizontalheader-light sidebar-dark sidebar-expand">
@@ -86,9 +90,11 @@
                         <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">network_check</i>
                                 <span class="hide-menu">Dashboard <span class="badge badge-border bg-primary pull-right">5</span></span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="http://dharansh.in/oscarhtml/default/index.html">Default</a>
+                                <li><a href="class-create.html">Add New Class</a>
                                 </li>
-                                <li><a href="http://dharansh.in/oscarhtml/collapse-nav/index.html">Collapsed Nav</a>
+                                <li><a href="account-create.html">Add New Account</a>
+                                </li>
+                                <li><a href="subject-create.html">Add New Subject</a>
                                 </li>
                             </ul>
                         </li>
@@ -96,23 +102,13 @@
                         <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
                                 <span class="hide-menu">Forms</span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="form-elements.html">Elements</a>
+                                <li><a href="class-list.html">List Class</a>
                                 </li>
-                                <li><a href="form-material.html">Material Design</a>
+                                <li><a href="student-list.html">List Student</a>
                                 </li>
-                                <li><a href="form-validation.html">Form Validation</a>
+                                <li><a href="subject-list.html">List Subject</a>
                                 </li>
-                                <li><a href="form-dropzone.html">File Upload</a>
-                                </li>
-                                <li><a href="form-pickers.html">Picker</a>
-                                </li>
-                                <li><a href="form-select.html">Select and Multiselect</a>
-                                </li>
-                                <li><a href="form-tags-categories.html">Tags and Categories</a>
-                                </li>
-                                <li><a href="form-addons.html">Addons</a>
-                                </li>
-                                <li><a href="form-editors.html">Editors</a>
+                                <li><a href="employee-list.html">List Employee</a>
                                 </li>
                             </ul>
                         </li>
@@ -141,30 +137,81 @@
                     </div>
                     <!-- /.page-title-right -->
                 </div>
-                <!-- /.page-title -->
-                <!-- =================================== -->
-                <!-- Different data widgets ============ -->
-                <!-- =================================== -->
                 <div class="widget-list">
                     <div class="row">
                         <div class="col-md-12 widget-holder">
                             <div class="widget-bg">
                                 <div class="widget-heading clearfix">
                                     <h5>jQuery DataTables</h5>
+                                    <div class="add-subjects">
+                                        <em>Add Subjects</em>
+                                        <select id="example-getting-started" multiple="multiple" name="subject[]">
+                                        </select>
+                                        <button class="btn btn-success btn-save-subject">Save</button>
+                                    </div>
+                                <!-- /.widget-heading -->
+                                <div class="widget-body clearfix">
+                                    <table class="table table-striped" data-toggle="datatables" >
+                                        <thead>
+                                        <tr>
+                                            <th>Subject Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="listSubjects">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-list">
+                    <div class="row">
+                        <div class="col-md-12 widget-holder">
+                            <div class="widget-bg">
+                                <div class="widget-heading clearfix">
+                                    <h5>jQuery DataTables</h5>
+                                    <div class="add-subjects">
+                                        <em>Add Students</em>
+                                        <select id="select-student" multiple="multiple" name="subject[]">
+                                        </select>
+                                        <select class="subject-grade hidden" id="select-subject-grade"  name="SubjectId">
+                                        </select>
+                                        <button class="btn btn-success btn-save-student">Save</button>
+                                        <button class="btn btn-success add-grade-btn">Add Grade For All Students</button>
+                                    </div>
                                 </div>
                                 <!-- /.widget-heading -->
                                 <div class="widget-body clearfix">
                                     <table class="table table-striped" data-toggle="datatables">
                                         <thead>
                                             <tr>
-                                                <th>Class Name</th>
-                                                <th>Teacher</th>
-                                                <th>Created At</th>
-                                                <th>Updated At</th>
+                                                <th>Roll Number</th>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Email</th>
                                                 <th>Status</th>
+                                                <th>Roles</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
+
+                                        <tbody id="studentList">
+                                        </tbody>
+                                        <tr class="gradeForms hidden">
+                                            <td><p class="hidden">zzzzzzz</p></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="text-right">
+                                                <button class="btn btn-primary btn-submit-grade">Save</button>
+                                            </td>
+                                        </tr>
+
                                         <tbody>
                                             <tr>
                                                 <td>Jonas Alexander</td>
@@ -251,6 +298,7 @@
                     </div>
                     <!-- /.row -->
                 </div>
+                </div>
                 <!-- /.widget-list -->
             </main>
             <!-- /.main-wrappper -->
@@ -272,6 +320,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-multiselect.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/common-script.js"></script>
+    <script src="assets/js/class-detail.js"></script>
 </body>
 
 </html>
