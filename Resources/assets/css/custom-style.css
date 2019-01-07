@@ -22,3 +22,16 @@
     background-color: #38d57a;
     color: white;
 }
+
+.input-group-btn, .input-group-addon{
+    display: none;
+}
+
+.multiselect-container li{
+    list-style: none;
+    margin: 0;
+}
+
+.multiselect-search{
+    margin-right: 10px;
+}
