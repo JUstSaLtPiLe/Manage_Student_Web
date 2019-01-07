@@ -140,7 +140,7 @@
                 <!-- =================================== -->
                 <div class="widget-list">
                     <div class="row">
-                        <div class="col-md-12 widget-holder">
+                        <div class="col-md-6 widget-holder">
                             <div class="widget-bg">
                                 <div class="widget-heading clearfix">
                                     <h5>Student detail</h5>
@@ -189,6 +189,64 @@
                                         <!-- Button trigger modal -->
                                         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Add
                                             grade</button>
+                                            <button class="w3-button w3-black" id="showList">List student of class</button>
+                                    </div>
+                                    <!-- /.col-sm-12 -->
+                                </div>
+                                <!-- /.widget-body -->
+                            </div>
+                            <!-- /.widget-bg -->
+                        </div>
+                        <div class="col-md-6 widget-holder" id="list_student" style="display:none;">
+                            <div class="widget-bg">
+                                <div class="widget-heading clearfix">
+                                    <h5>List student</h5>
+                                </div>
+                                <!-- /.widget-heading -->
+
+                                <div class="widget-body clearfix">
+                                    <table class="table table-striped" data-toggle="datatables">
+                                        <thead>
+                                            <tr>
+                                                <th>Roll Number</th>
+                                                <th>Student Name</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Developer</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Developer</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Developer</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Developer</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Developer</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 btn-list" style="padding-left:30px;">
+                                        <!-- Button trigger modal -->
+                                        <!-- <button class="w3-button w3-green">BTN</button> -->
                                     </div>
                                     <!-- /.col-sm-12 -->
                                 </div>
@@ -222,9 +280,19 @@
                             </div>
                         </div>
                         <div>
-                            <label for="validationServer02">Grade</label>
+                            <label for="validationServer02">Grade Assignment</label>
                         </div>
-                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade"
+                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade assignment"
+                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
+                        <div>
+                            <label for="validationServer02">Grade Theory</label>
+                        </div>
+                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade theory"
+                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
+                        <div>
+                            <label for="validationServer02">Grade Practice</label>
+                        </div>
+                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade practice"
                             value="" required="" min="0" max="10" style="margin-bottom:10px;">
                         <button class="btn btn-info ripple"><span>Save</span>
                         </button>
@@ -253,6 +321,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
     <!-- <script src="assets/js/theme.js"></script> -->
     <script src="assets/js/custom.js"></script>
+    <script>
+$('#showList').click(function(){
+    $('#list_student').show();
+})
+    </script>
 </body>
 
 </html>
