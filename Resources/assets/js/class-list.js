@@ -18,12 +18,38 @@ $(document).ready(function () {
                 content += "<td>" + result[i].status + "</td>";
                 content += "<td><a href='#'> Edit </a>";
                 content += "<a href='/Manage_Student_Web/Resources/class-detail.html?classId=" + result[i].clazzId + "'>" + "Details </a>";
-                content += "<a href='https://localhost:44320/Clazzs/Delete/" + result[i].clazzId + "'> Delete </a>";
+                content += "<a class='delete-class " + result[i].clazzId + "'>" + "Delete </a>";
             }
             $("#classList").html(content);
         },
         error: function (xhr, textStatus, errorThrown) {
             alert("error");
+        }
+    });
+
+    $(document).on('click', '.delete-class' ,function(){
+        if(confirm("Delete this class?")){
+            var classId = $(this).attr("class").split(' ')[1];
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json',
+                type: 'POST',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                    "Role": Cookies.get("loggedUserRole"),
+                },
+                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteClazz',
+                data: JSON.stringify(classId),
+                success: function (result) {
+                    swal({title: "Deleted!", type: "success"},
+                        function(){
+                            if(!alert('Deleted!')){window.location.reload();}
+                        }
+                    );
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                }
+            });
         }
     });
 });

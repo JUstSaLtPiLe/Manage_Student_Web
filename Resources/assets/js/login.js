@@ -10,14 +10,22 @@ $(".btn-submit").click(function (){
         contentType: 'application/json',
         url: 'https://localhost:44320/api/StudentResourcesAPI/Login',
         data: JSON.stringify(formData),
-        success: function (result) {
-            Cookies.set("token" , result.credential.accessToken);
-            Cookies.set("loggedUserRole" , result.roles);
-            Cookies.set("loggedUserName" , result.name);
-            window.location.href = "/Manage_Student_Web/Resources/class-list.html";
+        success: function (result, textStatus, jqXHR) {
+
+            if(jqXHR.status == 204){
+                swal("Account not exist");
+            }
+            else {
+                Cookies.set("token" , result.credential.accessToken);
+                Cookies.set("loggedUserRole" , result.roles);
+                Cookies.set("loggedUserName" , result.name);
+                window.location.href = "/Manage_Student_Web/Resources/class-list.html";
+            }
         },
-        error: function (xhr, textStatus, errorThrown) {
-            alert("error");
+        error: function (jqXHR, textStatus, errorThrown) {
+            if(jqXHR.status == 401){
+                swal("Wrong Password");
+            }
         }
     });
 });

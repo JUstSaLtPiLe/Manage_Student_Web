@@ -231,6 +231,8 @@ $(document).ready(function () {
             data: grades,
             success: function (result) {
                 swal("Successful");
+                $(".gradeForms").addClass("hidden");
+                $(".subject-grade").addClass("hidden");
             },
             error: function (xhr, textStatus, errorThrown) {
                 if (xhr.status == 409) {
