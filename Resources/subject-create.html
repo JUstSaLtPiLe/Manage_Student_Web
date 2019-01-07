@@ -60,6 +60,7 @@
                     <a href="" style="margin-right: 0; padding: 0;">LOGOUT</a>
                     <i class="material-icons list-icon">expand_more</i>
                     </span>
+
                     <div class="dropdown-menu dropdown-left dropdown-card dropdown-card-wide">
                         <div class="card">
                             <header class="card-heading-extra">
@@ -89,11 +90,11 @@
                         <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
                                 <span class="hide-menu">Add New <span class="badge badge-border bg-primary pull-right">3</span></span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="/Resources/class-create.html">Add New Class</a>
+                                <li><a href="class-create.html">Add New Class</a>
                                 </li>
-                                <li><a href="/Resources/account-create.html">Add New Account</a>
+                                <li><a href="account-create.html">Add New Account</a>
                                 </li>
-                                <li><a href="/Resources/subject-create.html">Add New Subject</a>
+                                <li><a href="subject-create.html">Add New Subject</a>
                                 </li>
                             </ul>
                         </li>
@@ -101,13 +102,13 @@
                         <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
                                 <span class="hide-menu">View List</span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="/Resources/class-list.html">List Class</a>
+                                <li><a href="class-list.html">List Class</a>
                                 </li>
-                                <li><a href="/Resources/student-list.html">List Student</a>
+                                <li><a href="student-list.html">List Student</a>
                                 </li>
-                                <li><a href="/Resources/subject-list.html">List Subject</a>
+                                <li><a href="subject-list.html">List Subject</a>
                                 </li>
-                                <li><a href="/Resources/employee-list.html">List Employee</a>
+                                <li><a href="employee-list.html">List Employee</a>
                                 </li>
                             </ul>
                         </li>
@@ -149,16 +150,18 @@
                                 </div>
                                 <!-- /.widget-heading -->
                                 <div class="widget-body clearfix">
-                                    <div class="col-md-6 mb-3 input-has-value">
-                                        <label for="validationServer02">Subject name</label>
-                                        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="" required="">
-                                    </div>
+                                    <form id="createSubjectForm">
+                                        <div class="col-md-6 mb-3 input-has-value">
+                                            <label>Subject name</label>
+                                            <input type="text" class="form-control is-valid" name="Name">
+                                        </div>
+                                    </form>
                                     <div class="row">
-                                        <div class="col-sm-12 btn-list" style="padding-left:30px;">
+                                        <div class="col-sm-12 btn-list btn-submit" style="padding-left:30px;">
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </div>
                                         <div class="col-sm-12 btn-list" style="padding-left:30px;">
-                                            <a href="/Resources/subject-list.html" style="color:blue;">Back to list subject</a>
+                                            <a href="subject-list.html" style="color:blue;">Back to list subject</a>
                                         </div>
                                         <!-- /.col-sm-12 -->
                                     </div>
@@ -192,6 +195,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/common-script.js"></script>
+    <script src="assets/js/subject-create.js"></script>
 </body>
 
 </html>

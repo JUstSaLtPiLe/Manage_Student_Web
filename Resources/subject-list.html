@@ -60,6 +60,7 @@
                     <a href="" style="margin-right: 0; padding: 0;">LOGOUT</a>
                     <i class="material-icons list-icon">expand_more</i>
                     </span>
+
                     <div class="dropdown-menu dropdown-left dropdown-card dropdown-card-wide">
                         <div class="card">
                             <header class="card-heading-extra">
@@ -89,25 +90,25 @@
                         <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
                                 <span class="hide-menu">Add New <span class="badge badge-border bg-primary pull-right">3</span></span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="/Resources/class-create.html">Add New Class</a>
+                                <li><a href="class-create.html">Add New Class</a>
                                 </li>
-                                <li><a href="/Resources/account-create.html">Add New Account</a>
+                                <li><a href="account-create.html">Add New Account</a>
                                 </li>
-                                <li><a href="/Resources/subject-create.html">Add New Subject</a>
+                                <li><a href="subject-create.html">Add New Subject</a>
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
                                 <span class="hide-menu">View List</span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="/Resources/class-list.html">List Class</a>
+                                <li><a href="class-list.html">List Class</a>
                                 </li>
-                                <li><a href="/Resources/student-list.html">List Student</a>
+                                <li><a href="student-list.html">List Student</a>
                                 </li>
-                                <li><a href="/Resources/subject-list.html">List Subject</a>
+                                <li><a href="subject-list.html">List Subject</a>
                                 </li>
-                                <li><a href="/Resources/employee-list.html">List Employee</a>
+                                <li><a href="employee-list.html">List Employee</a>
                                 </li>
                             </ul>
                         </li>
@@ -152,98 +153,12 @@
                                     <table class="table table-striped" data-toggle="datatables">
                                         <thead>
                                             <tr>
-                                                <th>Class Name</th>
-                                                <!-- <th>Teacher</th>
-                                                <th>Created At</th>
-                                                <th>Updated At</th> -->
-                                                <th>Status</th>
+                                                <th>Subject Name</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <!-- <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td> -->
-                                                <td></td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <!-- <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td> -->
-                                                <td></td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <!-- <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td> -->
-                                                <td></td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <!-- <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td> -->
-                                                <td></td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <!-- <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td> -->
-                                                <td></td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <!-- <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td> -->
-                                                <td></td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            
+                                        <tbody id="listSubjects">
+
                                         </tbody>
 
                                     </table>
@@ -277,6 +192,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/common-script.js"></script>
+    <script src="assets/js/subject-list.js"></script>
 </body>
 
 </html>

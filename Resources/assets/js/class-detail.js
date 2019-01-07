@@ -40,7 +40,7 @@ $(document).ready(function () {
         success: function (result) {
             var content = "";
             var content2 = "";
-            var content3 = "";
+            var content3 = "<option value=\"\" disabled selected>Select Subject</option>\n";
             for (var i in result.clazzSubject){
                 if(result.clazzSubject[i].subject.status != 0 && result.clazzSubject[i].status != 0){
                     content2 += "<tr>";
@@ -71,8 +71,8 @@ $(document).ready(function () {
                         content += "<li>" + result.studentClazz[i].account.roleAccounts[j].role.name + "</li>";
                     }
                     content += "</ul></td>";
-                    content += "<td><a href='#'> Edit </a>";
-                    content += "<a href='#'>Details </a>";
+                    content += "<td><a href='account-edit.html?studentId='" + result.studentClazz[i].account.accountId + "'>" + "Edit </a>";
+                    content += "<a href='student-detail.html?studentId=" + result.studentClazz[i].account.accountId + "'>" + "Details </a>";
                     content += "<a class='delete-student " + result.studentClazz[i].account.accountId + "'>" + "Delete </a>";
                     content += "<a class='delete-student-from-class " + result.studentClazz[i].account.accountId + "'>" + " Delete From Class </a>";
                     content += "<td class='gradeForms hidden'>";
@@ -231,6 +231,8 @@ $(document).ready(function () {
             data: grades,
             success: function (result) {
                 swal("Successful");
+                $(".gradeForms").addClass("hidden");
+                $(".subject-grade").addClass("hidden");
             },
             error: function (xhr, textStatus, errorThrown) {
                 if (xhr.status == 409) {

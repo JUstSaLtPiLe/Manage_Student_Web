@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Head Libs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap-multiselect.css" type="text/css"/>
+    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="header-centered sidebar-horizontalheader-light sidebar-dark sidebar-expand">
@@ -60,6 +62,7 @@
                     <i class="material-icons list-icon">expand_more</i>
                     </span>
                     <a href="" style="margin-right: 0; padding: 0;">LOGOUT</a>
+
                     <i class="material-icons list-icon">expand_more</i>
                     </span>
                     <div class="dropdown-menu dropdown-left dropdown-card dropdown-card-wide">
@@ -90,11 +93,11 @@
                         <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
                                 <span class="hide-menu">Add New <span class="badge badge-border bg-primary pull-right">3</span></span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="/Resources/class-create.html">Add New Class</a>
+                                <li><a href="class-create.html">Add New Class</a>
                                 </li>
-                                <li><a href="/Resources/account-create.html">Add New Account</a>
+                                <li><a href="account-create.html">Add New Account</a>
                                 </li>
-                                <li><a href="/Resources/subject-create.html">Add New Subject</a>
+                                <li><a href="subject-create.html">Add New Subject</a>
                                 </li>
                             </ul>
                         </li>
@@ -102,13 +105,13 @@
                         <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
                                 <span class="hide-menu">View List</span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="/Resources/class-list.html">List Class</a>
+                                <li><a href="class-list.html">List Class</a>
                                 </li>
-                                <li><a href="/Resources/student-list.html">List Student</a>
+                                <li><a href="student-list.html">List Student</a>
                                 </li>
-                                <li><a href="/Resources/subject-list.html">List Subject</a>
+                                <li><a href="subject-list.html">List Subject</a>
                                 </li>
-                                <li><a href="/Resources/employee-list.html">List Employee</a>
+                                <li><a href="employee-list.html">List Employee</a>
                                 </li>
                             </ul>
                         </li>
@@ -143,49 +146,60 @@
                 <!-- =================================== -->
                 <div class="widget-list">
                     <div class="row">
-                        <div class="col-md-6 widget-holder">
+                        <div class="col-md-12 widget-holder">
                             <div class="widget-bg">
-                                <div class="widget-heading clearfix">
-                                    <h5>Student detail</h5>
-                                </div>
-                                <!-- /.widget-heading -->
-                                <div class="widget-body clearfix">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="validationServer02">Name</label>
-                                        <p>Nguyễn văn minh</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 mb-3">
-                                    <p class="text-muted">Gender</p>
-                                    <div class="form-group">
-                                        <div class="radiobox">
-                                            <label>
-                                                <input type="radio" name="radio1Option[]" value="1" checked="checked">
-                                                <span class="label-text">Male</span>
-                                            </label>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="widget-heading clearfix">
+                                            <h5>Student detail</h5>
                                         </div>
-                                        <!-- /.radiobox -->
-                                    </div>
-                                    <!-- /.form-group -->
-                                    <div class="form-group input-has-value">
-                                        <label class="form-control-label">Birthday</label>
-                                        <div class="input-group input-has-value">
-                                            <p>06/10/1997</p>
+                                        <div class="mb-3">
+                                            <label >Roll Number</label>
+                                            <p id="rollNumber"></p>
                                         </div>
-                                        <!-- /.input-group -->
+                                        <div class="mb-3">
+                                            <label>Name</label>
+                                            <p id="studentName"></p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label>Gender</label>
+                                            <p id="studentGender"></p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label>Birthday</label>
+                                            <p id="studentDob"></p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label>Email</label>
+                                            <p id="studentEmail"></p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label>Phone</label>
+                                            <p id="studentPhone"></p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label>Address</label>
+                                            <p id="studentAddress"></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationServer02">Phone</label>
-                                    <p>0999999999</p>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationServer02">Email</label>
-                                    <p>vanminh@gmail.com</p>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationServer02">Address</label>
-                                    <p>Hà Nội</p>
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <button class="w3-button w3-black mb-3 ml-3 inline-block" id="viewGradeBtn">View Grade</button>
+                                            <select class="form-control inline-block ml-3 hidden" id="select-subject" style="width: 20%">Select Class
+                                            </select>
+                                        </div>
+                                        <table class="table table-striped hidden" id="gradeTable">
+                                            <thead>
+                                            <tr>
+                                                <th>Assignment Grade</th>
+                                                <th>Theoretical Grade</th>
+                                                <th>Practical Grade</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="gradeList">
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12 btn-list" style="padding-left:30px;">
@@ -193,6 +207,8 @@
                                         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Add
                                             grade</button>
                                             <button class="w3-button w3-black" id="showList">List student of class</button>
+                                            <select class="form-control hidden" id="select-class" style="width: 10%">Select Class
+                                            </select>
                                     </div>
                                     <!-- /.col-sm-12 -->
                                 </div>
@@ -200,7 +216,7 @@
                             </div>
                             <!-- /.widget-bg -->
                         </div>
-                        <div class="col-md-6 widget-holder" id="list_student" style="display:none;">
+                        <div class="col-md-12 widget-holder" id="list_student" style="display:none;">
                             <div class="widget-bg">
                                 <div class="widget-heading clearfix">
                                     <h5>List student</h5>
@@ -212,38 +228,16 @@
                                         <thead>
                                             <tr>
                                                 <th>Roll Number</th>
-                                                <th>Student Name</th>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Email</th>
                                                 <th>Status</th>
+                                                <th>Roles</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td></td>
-                                            </tr>
+                                        <tbody id="studentList">
                                         </tbody>
-
                                     </table>
                                 </div>
                                 <div class="row">
@@ -274,31 +268,25 @@
                 </header>
                 <div class="w3-container">
                     <div class="col-md-6 mb-3">
-                        <div class="w3-dropdown-hover" style="margin-bottom:45px; margin-top:10px;">
-                            <button class="w3-button w3-warning">Choose subject</button>
-                            <div class="w3-dropdown-content w3-bar-block w3-border">
-                                <a href="#" class="w3-bar-item w3-button">Subject 1</a>
-                                <a href="#" class="w3-bar-item w3-button">Subject 2</a>
-                                <a href="#" class="w3-bar-item w3-button">Subject 3</a>
+                        <form class="gradeForm">
+                            <select class="form-control" id="select-subject-grade" name="SubjectId" style="width: 100%; margin-top: 20px; margin-bottom: 20px">
+                            </select>
+                            <input type="hidden" name="AccountId">
+                            <div>
+                                <label >Assignment Grade </label>
                             </div>
-                        </div>
-                        <div>
-                            <label for="validationServer02">Grade Assignment</label>
-                        </div>
-                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade assignment"
-                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
-                        <div>
-                            <label for="validationServer02">Grade Theory</label>
-                        </div>
-                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade theory"
-                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
-                        <div>
-                            <label for="validationServer02">Grade Practice</label>
-                        </div>
-                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade practice"
-                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
-                        <button class="btn btn-info ripple"><span>Save</span>
-                        </button>
+                            <input type="number" class="form-control is-valid" min="0" max="10" style="margin-bottom:10px;" name="AssignmentGrade">
+                            <div>
+                                <label >Theoretical Grade </label>
+                            </div>
+                            <input type="number" class="form-control is-valid" min="0" max="10" style="margin-bottom:10px;" name="TheoricalGrade">
+                            <div>
+                                <label >Practical Grade </label>
+                            </div>
+                            <input type="number" class="form-control is-valid" min="0" max="10" style="margin-bottom:10px;" name="PraticalGrade">
+                            <button type="button" class="btn btn-info ripple btn-submit-grade"><span>Save</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <footer class="w3-container w3-teal">
@@ -322,13 +310,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.7.0/js/perfect-scrollbar.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
-    <!-- <script src="assets/js/theme.js"></script> -->
+     <script src="assets/js/theme.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script>
-$('#showList').click(function(){
-    $('#list_student').show();
-})
-    </script>
+    <script type="text/javascript" src="assets/js/bootstrap-multiselect.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/common-script.js"></script>
+    <script src="assets/js/student-detail.js"></script>
 </body>
 
 </html>
