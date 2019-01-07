@@ -72,7 +72,7 @@ $(document).ready(function () {
                     }
                     content += "</ul></td>";
                     content += "<td><a href='#'> Edit </a>";
-                    content += "<a href='#'>Details </a>";
+                    content += "<a href='student-detail.html?studentId=" + result.studentClazz[i].account.accountId + "'>" + "Details </a>";
                     content += "<a class='delete-student " + result.studentClazz[i].account.accountId + "'>" + "Delete </a>";
                     content += "<a class='delete-student-from-class " + result.studentClazz[i].account.accountId + "'>" + " Delete From Class </a>";
                     content += "<td class='gradeForms hidden'>";
