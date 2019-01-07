@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/demo/favicon.png">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Detail class</title>
+    <title>Student detail</title>
     <!-- CSS -->
     <link href="assets/vendors/material-icons/material-icons.css" rel="stylesheet" type="text/css">
     <link href="assets/vendors/mono-social-icons/monosocialiconsfont.css" rel="stylesheet" type="text/css">
@@ -28,12 +28,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet"
         type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Head Libs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <link href="assets/css/style2.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/bootstrap-multiselect.css" type="text/css"/>
-    <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body class="header-centered sidebar-horizontalheader-light sidebar-dark sidebar-expand">
@@ -52,15 +50,15 @@
             <ul class="nav navbar-nav">
                 <li class="sidebar-toggle"><a href="javascript:void(0)" class="ripple"><i class="material-icons list-icon">menu</i></a>
                 </li>
-            </ul>        
-            
+            </ul>
+
             <!-- /.navbar-right -->
             <!-- User Image with Dropdown -->
             <ul class="nav navbar-nav">
-                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle ripple" data-toggle="dropdown"><span
-                            class="avatar thumb-sm">
-                            <p>USER</p>
-                            <i class="material-icons list-icon">expand_more</i></span></a>
+                <li class="dropdown">
+                    <a href="/Resources/login.html" style="margin-right: 20px;">LOGIN</a>
+                    <i class="material-icons list-icon">expand_more</i>
+                    </span>
                     <div class="dropdown-menu dropdown-left dropdown-card dropdown-card-wide">
                         <div class="card">
                             <header class="card-heading-extra">
@@ -69,8 +67,7 @@
                                         <h3 class="mr-b-10 sub-heading-font-family fw-300">Scott Adams</h3><span class="user--online">Available
                                             <i class="material-icons list-icon">expand_more</i></span>
                                     </div>
-                                    <div class="col-4 d-flex justify-content-end"><a href="#"
-                                            class="mr-t-10"><i class="material-icons list-icon">power_settings_new</i>
+                                    <div class="col-4 d-flex justify-content-end"><a href="#" class="mr-t-10"><i class="material-icons list-icon">power_settings_new</i>
                                             Logout</a>
                                     </div>
                                 </div>
@@ -87,32 +84,32 @@
             <aside class="site-sidebar clearfix">
                 <nav class="sidebar-nav">
                     <ul class="nav in side-menu">
-                        <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">network_check</i>
-                                <span class="hide-menu">Dashboard <span class="badge badge-border bg-primary pull-right">5</span></span></a>
+                        <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
+                                <span class="hide-menu">Add New <span class="badge badge-border bg-primary pull-right">3</span></span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="class-create.html">Add New Class</a>
+                                <li><a href="/Resources/class-create.html">Add New Class</a>
                                 </li>
-                                <li><a href="account-create.html">Add New Account</a>
+                                <li><a href="/Resources/account-create.html">Add New Account</a>
                                 </li>
-                                <li><a href="subject-create.html">Add New Subject</a>
+                                <li><a href="/Resources/subject-create.html">Add New Subject</a>
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
-                                <span class="hide-menu">Forms</span></a>
+                                <span class="hide-menu">View List</span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="class-list.html">List Class</a>
+                                <li><a href="/Resources/class-list.html">List Class</a>
                                 </li>
-                                <li><a href="student-list.html">List Student</a>
+                                <li><a href="/Resources/student-list.html">List Student</a>
                                 </li>
-                                <li><a href="subject-list.html">List Subject</a>
+                                <li><a href="/Resources/subject-list.html">List Subject</a>
                                 </li>
-                                <li><a href="employee-list.html">List Employee</a>
+                                <li><a href="/Resources/employee-list.html">List Employee</a>
                                 </li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                     <!-- /.side-menu -->
                 </nav>
@@ -123,172 +120,135 @@
                 <!-- Page Title Area -->
                 <div class="row page-title clearfix">
                     <div class="page-title-left">
-                        <h5 class="mr-0 mr-r-5">Data Tables</h5>
-                        <p class="mr-0 text-muted hidden-sm-down">statistics, charts, events and reports</p>
+                        <h5 class="mr-0 mr-r-5"></h5>
+                        <p class="mr-0 text-muted hidden-sm-down"></p>
                     </div>
                     <!-- /.page-title-left -->
                     <div class="page-title-right d-inline-flex">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                             </li>
-                            <li class="breadcrumb-item active">Data Tables</li>
+                            <li class="breadcrumb-item active">Student detail</li>
                         </ol>
-                        
+
                     </div>
                     <!-- /.page-title-right -->
                 </div>
+                <!-- /.page-title -->
+                <!-- =================================== -->
+                <!-- Different data widgets ============ -->
+                <!-- =================================== -->
                 <div class="widget-list">
                     <div class="row">
-                        <div class="col-md-12 widget-holder">
+                        <div class="col-md-6 widget-holder">
                             <div class="widget-bg">
                                 <div class="widget-heading clearfix">
-                                    <h5>jQuery DataTables</h5>
-                                    <div class="add-subjects">
-                                        <em>Add Subjects</em>
-                                        <select id="example-getting-started" multiple="multiple" name="subject[]">
-                                        </select>
-                                        <button class="btn btn-success btn-save-subject">Save</button>
-                                    </div>
+                                    <h5>Student detail</h5>
+                                </div>
                                 <!-- /.widget-heading -->
                                 <div class="widget-body clearfix">
-                                    <table class="table table-striped" data-toggle="datatables" >
-                                        <thead>
-                                        <tr>
-                                            <th>Subject Name</th>
-                                            <th>Action</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody id="listSubjects">
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="widget-list">
-                    <div class="row">
-                        <div class="col-md-12 widget-holder">
-                            <div class="widget-bg">
-                                <div class="widget-heading clearfix">
-                                    <h5>jQuery DataTables</h5>
-                                    <div class="add-subjects">
-                                        <em>Add Students</em>
-                                        <select id="select-student" multiple="multiple" name="subject[]">
-                                        </select>
-                                        <select class="subject-grade hidden" id="select-subject-grade"  name="SubjectId">
-                                        </select>
-                                        <button class="btn btn-success btn-save-student">Save</button>
-                                        <button class="btn btn-success add-grade-btn">Add Grade For All Students</button>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer02">Name</label>
+                                        <p>Nguyễn văn minh</p>
                                     </div>
                                 </div>
+                                <div class="col-sm-4 mb-3">
+                                    <p class="text-muted">Gender</p>
+                                    <div class="form-group">
+                                        <div class="radiobox">
+                                            <label>
+                                                <input type="radio" name="radio1Option[]" value="1" checked="checked">
+                                                <span class="label-text">Male</span>
+                                            </label>
+                                        </div>
+                                        <!-- /.radiobox -->
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div class="form-group input-has-value">
+                                        <label class="form-control-label">Birthday</label>
+                                        <div class="input-group input-has-value">
+                                            <p>06/10/1997</p>
+                                        </div>
+                                        <!-- /.input-group -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationServer02">Phone</label>
+                                    <p>0999999999</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationServer02">Email</label>
+                                    <p>vanminh@gmail.com</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationServer02">Address</label>
+                                    <p>Hà Nội</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 btn-list" style="padding-left:30px;">
+                                        <!-- Button trigger modal -->
+                                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Add
+                                            grade</button>
+                                            <button class="w3-button w3-black" id="showList">List student of class</button>
+                                    </div>
+                                    <!-- /.col-sm-12 -->
+                                </div>
+                                <!-- /.widget-body -->
+                            </div>
+                            <!-- /.widget-bg -->
+                        </div>
+                        <div class="col-md-6 widget-holder" id="list_student" style="display:none;">
+                            <div class="widget-bg">
+                                <div class="widget-heading clearfix">
+                                    <h5>List student</h5>
+                                </div>
                                 <!-- /.widget-heading -->
+
                                 <div class="widget-body clearfix">
                                     <table class="table table-striped" data-toggle="datatables">
                                         <thead>
                                             <tr>
                                                 <th>Roll Number</th>
-                                                <th>Name</th>
-                                                <th>Phone</th>
-                                                <th>Email</th>
+                                                <th>Student Name</th>
                                                 <th>Status</th>
-                                                <th>Roles</th>
-                                                <th>Action</th>
                                             </tr>
                                         </thead>
-
-                                        <tbody id="studentList">
-                                        </tbody>
-                                        <tr class="gradeForms hidden">
-                                            <td><p class="hidden">zzzzzzz</p></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="text-right">
-                                                <button class="btn btn-primary btn-submit-grade">Save</button>
-                                            </td>
-                                        </tr>
-
                                         <tbody>
                                             <tr>
                                                 <td>Jonas Alexander</td>
                                                 <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
+                                                <td></td>
                                             </tr>
                                             <tr>
                                                 <td>Jonas Alexander</td>
                                                 <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
+                                                <td></td>
                                             </tr>
                                             <tr>
                                                 <td>Jonas Alexander</td>
                                                 <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
+                                                <td></td>
                                             </tr>
                                             <tr>
                                                 <td>Jonas Alexander</td>
                                                 <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
+                                                <td></td>
                                             </tr>
                                             <tr>
                                                 <td>Jonas Alexander</td>
                                                 <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
+                                                <td></td>
                                             </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-
                                         </tbody>
 
                                     </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 btn-list" style="padding-left:30px;">
+                                        <!-- Button trigger modal -->
+                                        <!-- <button class="w3-button w3-green">BTN</button> -->
+                                    </div>
+                                    <!-- /.col-sm-12 -->
                                 </div>
                                 <!-- /.widget-body -->
                             </div>
@@ -298,15 +258,56 @@
                     </div>
                     <!-- /.row -->
                 </div>
-                </div>
                 <!-- /.widget-list -->
             </main>
             <!-- /.main-wrappper -->
+        </div>
+        <!-- Modal -->
+        <div id="id01" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4" style="width:500px;">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+                    <h2>Add new grade</h2>
+                </header>
+                <div class="w3-container">
+                    <div class="col-md-6 mb-3">
+                        <div class="w3-dropdown-hover" style="margin-bottom:45px; margin-top:10px;">
+                            <button class="w3-button w3-warning">Choose subject</button>
+                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                                <a href="#" class="w3-bar-item w3-button">Subject 1</a>
+                                <a href="#" class="w3-bar-item w3-button">Subject 2</a>
+                                <a href="#" class="w3-bar-item w3-button">Subject 3</a>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="validationServer02">Grade Assignment</label>
+                        </div>
+                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade assignment"
+                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
+                        <div>
+                            <label for="validationServer02">Grade Theory</label>
+                        </div>
+                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade theory"
+                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
+                        <div>
+                            <label for="validationServer02">Grade Practice</label>
+                        </div>
+                        <input type="number" class="form-control is-valid" id="validationServer02" placeholder="grade practice"
+                            value="" required="" min="0" max="10" style="margin-bottom:10px;">
+                        <button class="btn btn-info ripple"><span>Save</span>
+                        </button>
+                    </div>
+                </div>
+                <footer class="w3-container w3-teal">
+                    <p></p>
+                </footer>
+            </div>
         </div>
         <!-- /.content-wrapper -->
         <!-- FOOTER -->
         <footer class="footer text-center clearfix">2017 © Oscar Admin brought to you by UnifatoThemes</footer>
     </div>
+
     <!--/ #wrapper -->
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -318,12 +319,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.7.0/js/perfect-scrollbar.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <!-- <script src="assets/js/theme.js"></script> -->
     <script src="assets/js/custom.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap-multiselect.js"></script>
-    <script src="assets/js/cookies.js"></script>
-    <script src="assets/js/common-script.js"></script>
-    <script src="assets/js/class-detail.js"></script>
+    <script>
+$('#showList').click(function(){
+    $('#list_student').show();
+})
+    </script>
 </body>
 
 </html>
