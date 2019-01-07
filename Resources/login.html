@@ -112,16 +112,14 @@
                                     <div class="widget-bg">
                                         <div class="widget-body clearfix">
                                             <h5 class="box-title mr-b-0">Form login</h5>
-                                            <form class="mr-t-30" action="javascript:void(0)">
+                                            <form class="mr-t-30" action="javascript:void(0)" id="loginForm">
                                                 <div class="form-group row">
-                                                    <label for="sample3UserName" class="text-sm-right col-sm-3 col-form-label">User
-                                                        Name</label>
+                                                    <label for="sample3UserName" class="text-sm-right col-sm-3 col-form-label">Roll Number</label>
                                                     <div class="col-sm-9">
                                                         <div class="input-group">
                                                             <div class="input-group-addon"><i class="material-icons">person</i>
                                                             </div>
-                                                            <input type="text" class="form-control" id="sample3UserName"
-                                                                placeholder="User Name">
+                                                            <input type="text" class="form-control" id="sample3UserName" name="RollNumber">
                                                         </div>
                                                         <!-- /.input-group -->
                                                     </div>
@@ -134,8 +132,7 @@
                                                         <div class="input-group">
                                                             <div class="input-group-addon"><i class="material-icons">lock</i>
                                                             </div>
-                                                            <input type="password" class="form-control" id="sample3Password"
-                                                                placeholder="Password">
+                                                            <input type="password" name="Password" class="form-control" id="sample3Password">
                                                         </div>
                                                         <!-- /.input-group -->
                                                     </div>
@@ -158,7 +155,7 @@
                                                 <div class="form-actions">
                                                     <div class="form-group row">
                                                         <div class="col-sm-9 ml-auto btn-list">
-                                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                            <button type="button" class="btn btn-primary btn-submit">Login</button>
                                                             <button type="button" class="btn btn-default">Cancel</button>
                                                         </div>
                                                         <!-- /.col-sm-12 -->
@@ -200,6 +197,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
