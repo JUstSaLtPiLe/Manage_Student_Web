@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/demo/favicon.png">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Detail class</title>
+    <title>Edit account</title>
     <!-- CSS -->
     <link href="assets/vendors/material-icons/material-icons.css" rel="stylesheet" type="text/css">
     <link href="assets/vendors/mono-social-icons/monosocialiconsfont.css" rel="stylesheet" type="text/css">
@@ -48,15 +48,15 @@
             <ul class="nav navbar-nav">
                 <li class="sidebar-toggle"><a href="javascript:void(0)" class="ripple"><i class="material-icons list-icon">menu</i></a>
                 </li>
-            </ul>        
-            
+            </ul>
+
             <!-- /.navbar-right -->
             <!-- User Image with Dropdown -->
             <ul class="nav navbar-nav">
-                <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle ripple" data-toggle="dropdown"><span
-                            class="avatar thumb-sm">
-                            <p>USER</p>
-                            <i class="material-icons list-icon">expand_more</i></span></a>
+                <li class="dropdown">
+                            <A href="/Resources/login.html" style="margin-right: 20px;">LOGIN</p>
+                            <i class="material-icons list-icon">expand_more</i>
+                        </span>
                     <div class="dropdown-menu dropdown-left dropdown-card dropdown-card-wide">
                         <div class="card">
                             <header class="card-heading-extra">
@@ -65,8 +65,7 @@
                                         <h3 class="mr-b-10 sub-heading-font-family fw-300">Scott Adams</h3><span class="user--online">Available
                                             <i class="material-icons list-icon">expand_more</i></span>
                                     </div>
-                                    <div class="col-4 d-flex justify-content-end"><a href="#"
-                                            class="mr-t-10"><i class="material-icons list-icon">power_settings_new</i>
+                                    <div class="col-4 d-flex justify-content-end"><a href="#" class="mr-t-10"><i class="material-icons list-icon">power_settings_new</i>
                                             Logout</a>
                                     </div>
                                 </div>
@@ -83,40 +82,32 @@
             <aside class="site-sidebar clearfix">
                 <nav class="sidebar-nav">
                     <ul class="nav in side-menu">
-                        <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">network_check</i>
-                                <span class="hide-menu">Dashboard <span class="badge badge-border bg-primary pull-right">5</span></span></a>
+                        <li class="current-page menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
+                                <span class="hide-menu">Add New <span class="badge badge-border bg-primary pull-right">3</span></span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="http://dharansh.in/oscarhtml/default/index.html">Default</a>
+                                <li><a href="/Resources/class-create.html">Add New Class</a>
                                 </li>
-                                <li><a href="http://dharansh.in/oscarhtml/collapse-nav/index.html">Collapsed Nav</a>
+                                <li><a href="/Resources/account-create.html">Add New Account</a>
+                                </li>
+                                <li><a href="/Resources/subject-create.html">Add New Subject</a>
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="menu-item-has-children"><a href="javascript:void(0);"><i class="list-icon material-icons">playlist_add</i>
-                                <span class="hide-menu">Forms</span></a>
+                                <span class="hide-menu">View List</span></a>
                             <ul class="list-unstyled sub-menu">
-                                <li><a href="form-elements.html">Elements</a>
+                                <li><a href="/Resources/class-list.html">List Class</a>
                                 </li>
-                                <li><a href="form-material.html">Material Design</a>
+                                <li><a href="/Resources/student-list.html">List Student</a>
                                 </li>
-                                <li><a href="form-validation.html">Form Validation</a>
+                                <li><a href="/Resources/student-list.html">List Subject</a>
                                 </li>
-                                <li><a href="form-dropzone.html">File Upload</a>
-                                </li>
-                                <li><a href="form-pickers.html">Picker</a>
-                                </li>
-                                <li><a href="form-select.html">Select and Multiselect</a>
-                                </li>
-                                <li><a href="form-tags-categories.html">Tags and Categories</a>
-                                </li>
-                                <li><a href="form-addons.html">Addons</a>
-                                </li>
-                                <li><a href="form-editors.html">Editors</a>
+                                <li><a href="/Resources/employee-list.html">List Employee</a>
                                 </li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                     <!-- /.side-menu -->
                 </nav>
@@ -137,7 +128,7 @@
                             </li>
                             <li class="breadcrumb-item active">Data Tables</li>
                         </ol>
-                        
+
                     </div>
                     <!-- /.page-title-right -->
                 </div>
@@ -150,98 +141,35 @@
                         <div class="col-md-12 widget-holder">
                             <div class="widget-bg">
                                 <div class="widget-heading clearfix">
-                                    <h5>jQuery DataTables</h5>
+                                    <h5>Edit account</h5>
                                 </div>
                                 <!-- /.widget-heading -->
                                 <div class="widget-body clearfix">
-                                    <table class="table table-striped" data-toggle="datatables">
-                                        <thead>
-                                            <tr>
-                                                <th>Class Name</th>
-                                                <th>Teacher</th>
-                                                <th>Created At</th>
-                                                <th>Updated At</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonas Alexander</td>
-                                                <td>Developer</td>
-                                                <td>San Francisco</td>
-                                                <td>30</td>
-                                                <td>2010/07/14</td>
-                                                <td>
-                                                    <a href="">Edit</a>
-                                                    <a href="">Detail</a>
-                                                    <a href="">Delete</a>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
+                                    <div class="col-md-6 mb-3 input-has-value">
+                                        <label for="validationServer02">Phone</label>
+                                        <input type="number" class="form-control is-valid" id="validationServer02"
+                                            placeholder="Phone number" value="" required="">
+                                    </div>
+                                    <div class="col-md-6 mb-3 input-has-value">
+                                        <label for="validationServer02">Email</label>
+                                        <input type="email" class="form-control is-valid" id="validationServer02"
+                                            placeholder="email" value="" required="">
+                                    </div>
+                                    <div class="col-md-6 mb-3 input-has-value">
+                                        <label for="validationServer02">Address</label>
+                                        <input type="text" class="form-control is-valid" id="validationServer02"
+                                            placeholder="address" value="" required="">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 btn-list" style="padding-left:30px;">
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                            <button type="reset" class="btn btn-default">Reset</button>
+                                        </div>
+                                        <div class="col-sm-12 btn-list" style="padding-left:30px;">
+                                            <a href="#" style="color:blue;">Back to list class</a>
+                                        </div>
+                                        <!-- /.col-sm-12 -->
+                                    </div>
                                 </div>
                                 <!-- /.widget-body -->
                             </div>
