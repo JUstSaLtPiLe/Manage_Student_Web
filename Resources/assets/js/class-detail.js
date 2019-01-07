@@ -42,52 +42,60 @@ $(document).ready(function () {
             var content2 = "";
             var content3 = "";
             for (var i in result.clazzSubject){
-                content2 += "<tr>";
-                content2 += "<td>" + result.clazzSubject[i].subject.name + "</td>";
-                content2 += "<td><a href='#'> Edit </a>";
-                content2 += "<a href='#'> Details </a>";
-                content2 += "<a href='#'> Delete </a>";
-                content2 += "</td>";
-                content2 += "</tr>";
+                if(result.clazzSubject[i].subject.status != 0 && result.clazzSubject[i].status != 0){
+                    content2 += "<tr>";
+                    content2 += "<td>" + result.clazzSubject[i].subject.name + "</td>";
+                    content2 += "<td><a href='#'> Edit </a>";
+                    content2 += "<a href='#'> Details </a>";
+                    content2 += "<a class='delete-subject " + result.clazzSubject[i].subject.subjectId + "'>" + "Delete </a>";
+                    content2 += "<a class='delete-subject-from-class " + result.clazzSubject[i].subject.subjectId + "'>" + " Delete From Class </a>";
+                    content2 += "</td>";
+                    content2 += "</tr>";
+                }
             }
             for (var i in result.clazzSubject){
-                content3 += "<option value='" + result.clazzSubject[i].subject.subjectId + "'>" + result.clazzSubject[i].subject.name + "</option>"
+                if(result.clazzSubject[i].subject.status != 0){
+                    content3 += "<option value='" + result.clazzSubject[i].subject.subjectId + "'>" + result.clazzSubject[i].subject.name + "</option>"
+                }
             }
             for (var i in result.studentClazz){
-                content += "<tr>";
-                content += "<td>" + result.studentClazz[i].account.rollNumber + "</td>";
-                content += "<td>" + result.studentClazz[i].account.generalInformation.name + "</td>";
-                content += "<td>" + result.studentClazz[i].account.generalInformation.phone + "</td>";
-                content += "<td>" + result.studentClazz[i].account.generalInformation.email + "</td>";
-                content += "<td>" + result.studentClazz[i].account.status + "</td>";
-                content += "<td><ul>";
-                for(var j in result.studentClazz[i].account.roleAccounts){
-                    content += "<li>" + result.studentClazz[i].account.roleAccounts[j].role.name + "</li>";
+                if(result.studentClazz[i].account.status != 0 && result.studentClazz[i].status != 0){
+                    content += "<tr>";
+                    content += "<td>" + result.studentClazz[i].account.rollNumber + "</td>";
+                    content += "<td>" + result.studentClazz[i].account.generalInformation.name + "</td>";
+                    content += "<td>" + result.studentClazz[i].account.generalInformation.phone + "</td>";
+                    content += "<td>" + result.studentClazz[i].account.generalInformation.email + "</td>";
+                    content += "<td>" + result.studentClazz[i].account.status + "</td>";
+                    content += "<td><ul>";
+                    for(var j in result.studentClazz[i].account.roleAccounts){
+                        content += "<li>" + result.studentClazz[i].account.roleAccounts[j].role.name + "</li>";
+                    }
+                    content += "</ul></td>";
+                    content += "<td><a href='#'> Edit </a>";
+                    content += "<a href='#'>Details </a>";
+                    content += "<a class='delete-student " + result.studentClazz[i].account.accountId + "'>" + "Delete </a>";
+                    content += "<a class='delete-student-from-class " + result.studentClazz[i].account.accountId + "'>" + " Delete From Class </a>";
+                    content += "<td class='gradeForms hidden'>";
+                    content += "<form class='gradeForm'>";
+                    content += "<div class='form-group'>";
+                    content += "<input type='hidden' name='AccountId' value='" + result.studentClazz[i].accountId + "'>";
+                    content += "<input type='hidden' class='subjectId' name='SubjectId'>";
+                    content += "</div>";
+                    content += "<div class='form-group'>";
+                    content += "<label> Assignment Grade </label>";
+                    content += "<input type='number' class='form-control' name='AssignmentGrade'>";
+                    content += "</div>";
+                    content += "<div class='form-group'>";
+                    content += "<label> Practical Grade </label>";
+                    content += "<input type='number' class='form-control' name='PraticalGrade'>";
+                    content += "</div>";
+                    content += "<div class='form-group'>";
+                    content += "<label> Theoretical Grade </label>";
+                    content += "<input type='number' class='form-control' name='TheoricalGrade'>";
+                    content += "</div>";
+                    content += "</form>";
+                    content += "</td>";
                 }
-                content += "</ul></td>";
-                content += "<td><a href='#'> Edit </a>";
-                content += "<a href='#'>Details </a>";
-                content += "<a href='#'> Delete </a>";
-                content += "<td class='gradeForms hidden'>";
-                content += "<form class='gradeForm'>";
-                content += "<div class='form-group'>";
-                content += "<input type='hidden' name='AccountId' value='" + result.studentClazz[i].accountId + "'>";
-                content += "<input type='hidden' class='subjectId' name='SubjectId'>";
-                content += "</div>";
-                content += "<div class='form-group'>";
-                content += "<label> Assignment Grade </label>";
-                content += "<input type='number' class='form-control' name='AssignmentGrade'>";
-                content += "</div>";
-                content += "<div class='form-group'>";
-                content += "<label> Practical Grade </label>";
-                content += "<input type='number' class='form-control' name='PraticalGrade'>";
-                content += "</div>";
-                content += "<div class='form-group'>";
-                content += "<label> Theoretical Grade </label>";
-                content += "<input type='number' class='form-control' name='TheoricalGrade'>";
-                content += "</div>";
-                content += "</form>";
-                content += "</td>";
             }
             $("#listSubjects").html(content2);
             $("#studentList").html(content);
@@ -113,7 +121,9 @@ $(document).ready(function () {
         success: function (result) {
             var content = "";
             for (var i in result.studentAccounts){
-                content += "<option value='" + result.studentAccounts[i].accountId + "'>" + result.studentAccounts[i].account.generalInformation.name + "</option>"
+                if(result.studentAccounts[i].account.status != 0){
+                    content += "<option value='" + result.studentAccounts[i].accountId + "'>" + result.studentAccounts[i].account.generalInformation.name + "</option>"
+                }
             }
             $("#select-student").html(content);
             $('#select-student').multiselect({
@@ -231,4 +241,113 @@ $(document).ready(function () {
     });
     //**********************
 
+    $(document).on('click', '.delete-student' ,function(){
+        if(confirm("Delete this Student?")){
+            var accountId = $(this).attr("class").split(' ')[1];
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json',
+                type: 'POST',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                    "Role": Cookies.get("loggedUserRole"),
+                },
+                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteAccount',
+                data: JSON.stringify(accountId),
+                success: function (result) {
+                    swal({title: "Deleted!", type: "success"},
+                        function(){
+                            if(!alert('Deleted!')){window.location.reload();}
+                        }
+                    );
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                }
+            });
+        }
+    });
+
+    $(document).on('click', '.delete-student-from-class' ,function(){
+        if(confirm("Delete this Student From Class?")){
+            var studentClazz = {
+                "AccountId" : $(this).attr("class").split(' ')[1],
+                "ClazzId" : window.location.href.split("=")[1],
+            };
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json',
+                type: 'POST',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                    "Role": Cookies.get("loggedUserRole"),
+                },
+                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteStudentFromClazz',
+                data: JSON.stringify(studentClazz),
+                success: function (result) {
+                    swal({title: "Deleted!", type: "success"},
+                        function(){
+                            if(!alert('Deleted!')){window.location.reload();}
+                        }
+                    );
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                }
+            });
+        }
+    });
+
+    $(document).on('click', '.delete-subject' ,function(){
+        if(confirm("Delete this Subject?")){
+            var subjectId = $(this).attr("class").split(' ')[1];
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json',
+                type: 'POST',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                    "Role": Cookies.get("loggedUserRole"),
+                },
+                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteSubject',
+                data: JSON.stringify(subjectId),
+                success: function (result) {
+                    swal({title: "Deleted!", type: "success"},
+                        function(){
+                            if(!alert('Deleted!')){window.location.reload();}
+                        }
+                    );
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                }
+            });
+        }
+    });
+
+    $(document).on('click', '.delete-subject-from-class' ,function(){
+        if(confirm("Delete this Subject From Class?")){
+            var clazzSubject = {
+                "SubjectId" : $(this).attr("class").split(' ')[1],
+                "ClazzId" : window.location.href.split("=")[1],
+            };
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json',
+                type: 'POST',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                    "Role": Cookies.get("loggedUserRole"),
+                },
+                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteSubjectFromClazz',
+                data: JSON.stringify(clazzSubject),
+                success: function (result) {
+                    swal({title: "Deleted!", type: "success"},
+                        function(){
+                            if(!alert('Deleted!')){window.location.reload();}
+                        }
+                    );
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                }
+            });
+        }
+    });
 });
