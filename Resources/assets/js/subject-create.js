@@ -7,7 +7,7 @@ $(document).ready(function () {
             type: 'POST',
             accepts: 'application/json',
             contentType: 'application/json',
-            url: 'https://localhost:44320/api/studentResourcesAPI/CreateSubject',
+            url: API_CreateSubject,
             headers: {
                 "Authorization": Cookies.get("token"),
                 "Role": Cookies.get("loggedUserRole"),

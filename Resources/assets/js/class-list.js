@@ -3,7 +3,7 @@ $(document).ready(function () {
         type: 'GET',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/ClazzsIndex',
+        url: API_ClazzsIndex,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -38,7 +38,7 @@ $(document).ready(function () {
                     "Authorization": Cookies.get("token"),
                     "Role": Cookies.get("loggedUserRole"),
                 },
-                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteClazz',
+                url: API_DeleteClazz,
                 data: JSON.stringify(classId),
                 success: function (result) {
                     swal({title: "Deleted!", type: "success"},

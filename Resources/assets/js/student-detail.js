@@ -3,7 +3,7 @@ $(document).ready(function () {
         type: 'POST',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/StudentDetails',
+        url: API_StudentDetails,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -36,7 +36,7 @@ $(document).ready(function () {
         type: 'GET',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/SubjectsIndex',
+        url: API_SubjectsIndex,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -76,7 +76,7 @@ $(document).ready(function () {
                     "Authorization": Cookies.get("token"),
                     "Role": Cookies.get("loggedUserRole"),
                 },
-                url: 'https://localhost:44320/api/studentResourcesAPI/EditGrades',
+                url: API_EditGrades,
                 data: grades,
                 success: function (result, textStatus, jqXHR){
                     if(jqXHR.status == 204){
@@ -102,7 +102,7 @@ $(document).ready(function () {
                     "Authorization": Cookies.get("token"),
                     "Role": Cookies.get("loggedUserRole"),
                 },
-                url: 'https://localhost:44320/api/studentResourcesAPI/AddGrades',
+                url: API_AddGrades,
                 data: grades,
                 success: function (){
                     swal("Successful");
@@ -121,7 +121,7 @@ $(document).ready(function () {
             type: 'POST',
             accepts: 'application/json',
             contentType: 'application/json',
-            url: 'https://localhost:44320/api/studentResourcesAPI/GetStudenClazzs',
+            url: API_GetStudenClazzs,
             headers: {
                 "Authorization": Cookies.get("token"),
             },
@@ -144,7 +144,7 @@ $(document).ready(function () {
             type: 'POST',
             accepts: 'application/json',
             contentType: 'application/json',
-            url: 'https://localhost:44320/api/studentResourcesAPI/ClazzDetails',
+            url: API_ClazzDetails,
             headers: {
                 "Authorization": Cookies.get("token"),
             },
@@ -197,7 +197,7 @@ $(document).ready(function () {
                 type: 'POST',
                 accepts: 'application/json',
                 contentType: 'application/json',
-                url: 'https://localhost:44320/api/studentResourcesAPI/GetStudenGrades',
+                url: API_GetStudenGrades,
                 headers: {
                     "Authorization": Cookies.get("token"),
                 },

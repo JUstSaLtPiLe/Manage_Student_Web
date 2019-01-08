@@ -35,6 +35,8 @@ $(document).on('click', '.delete-student' ,function(){
             data: JSON.stringify(accountId),
             success: function (result) {
                 alert("Deleted");
+                window.location.reload();
+
             },
             error: function (xhr, textStatus, errorThrown) {
             }
@@ -60,6 +62,7 @@ $(document).on('click', '.delete-student-from-class' ,function(){
             data: JSON.stringify(studentClazz),
             success: function (result) {
                 alert("Deleted Student From Class");
+                window.location.reload();
             },
             error: function (xhr, textStatus, errorThrown) {
             }
@@ -82,6 +85,7 @@ $(document).on('click', '.delete-subject' ,function(){
             data: JSON.stringify(subjectId),
             success: function (result) {
                 alert("Deleted");
+                window.location.reload();
             },
             error: function (xhr, textStatus, errorThrown) {
             }
@@ -107,6 +111,7 @@ $(document).on('click', '.delete-subject-from-class' ,function(){
             data: JSON.stringify(clazzSubject),
             success: function (result) {
                 alert("Deleted Subject From Class");
+                window.location.reload();
             },
             error: function (xhr, textStatus, errorThrown) {
             }

@@ -8,7 +8,7 @@ $(".btn-submit").click(function (){
         type: 'POST',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/StudentResourcesAPI/Login',
+        url: API_LOGIN,
         data: JSON.stringify(formData),
         success: function (result, textStatus, jqXHR) {
 

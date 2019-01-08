@@ -8,7 +8,7 @@ $(".btn-submit").click(function (){
         type: 'POST',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/CreateClazz',
+        url: API_CreateClazz,
         headers: {
             "Authorization": Cookies.get("token"),
             "Role": Cookies.get("loggedUserRole"),
