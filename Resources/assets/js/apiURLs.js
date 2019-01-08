@@ -34,11 +34,9 @@ $(document).on('click', '.delete-student' ,function(){
             url: API_DeleteAccount,
             data: JSON.stringify(accountId),
             success: function (result) {
-                swal({title: "Deleted!", type: "success"},
-                    function(){
-                        if(!alert('Deleted!')){window.location.reload();}
-                    }
-                );
+                alert("Deleted");
+                window.location.reload();
+
             },
             error: function (xhr, textStatus, errorThrown) {
             }
@@ -63,11 +61,8 @@ $(document).on('click', '.delete-student-from-class' ,function(){
             url: API_DeleteStudentFromClazz,
             data: JSON.stringify(studentClazz),
             success: function (result) {
-                swal({title: "Deleted!", type: "success"},
-                    function(){
-                        if(!alert('Deleted!')){window.location.reload();}
-                    }
-                );
+                alert("Deleted Student From Class");
+                window.location.reload();
             },
             error: function (xhr, textStatus, errorThrown) {
             }
@@ -89,11 +84,8 @@ $(document).on('click', '.delete-subject' ,function(){
             url: API_DeleteSubject,
             data: JSON.stringify(subjectId),
             success: function (result) {
-                swal({title: "Deleted!", type: "success"},
-                    function(){
-                        if(!alert('Deleted!')){window.location.reload();}
-                    }
-                );
+                alert("Deleted");
+                window.location.reload();
             },
             error: function (xhr, textStatus, errorThrown) {
             }
@@ -118,11 +110,8 @@ $(document).on('click', '.delete-subject-from-class' ,function(){
             url: API_DeleteSubjectFromClazz,
             data: JSON.stringify(clazzSubject),
             success: function (result) {
-                swal({title: "Deleted!", type: "success"},
-                    function(){
-                        if(!alert('Deleted!')){window.location.reload();}
-                    }
-                );
+                alert("Deleted Subject From Class");
+                window.location.reload();
             },
             error: function (xhr, textStatus, errorThrown) {
             }
