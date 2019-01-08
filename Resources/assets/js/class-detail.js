@@ -83,15 +83,15 @@ $(document).ready(function () {
                     content += "</div>";
                     content += "<div class='form-group'>";
                     content += "<label> Assignment Grade </label>";
-                    content += "<input type='number' class='form-control' name='AssignmentGrade'>";
+                    content += "<input type='number' class='form-control' min='0' max='10' name='AssignmentGrade'>";
                     content += "</div>";
                     content += "<div class='form-group'>";
                     content += "<label> Practical Grade </label>";
-                    content += "<input type='number' class='form-control' name='PraticalGrade'>";
+                    content += "<input type='number' class='form-control' min='0' max='15' name='PraticalGrade'>";
                     content += "</div>";
                     content += "<div class='form-group'>";
                     content += "<label> Theoretical Grade </label>";
-                    content += "<input type='number' class='form-control' name='TheoricalGrade'>";
+                    content += "<input type='number' class='form-control' min='0' max='10' name='TheoricalGrade'>";
                     content += "</div>";
                     content += "</form>";
                     content += "</td>";

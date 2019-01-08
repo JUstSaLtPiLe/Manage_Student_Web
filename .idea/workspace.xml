@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d41257a7-25db-448a-a4ce-26ff6d5b91b1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Resources/account-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/account-create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/account-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/account-edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/assets/js/account-create.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/assets/js/account-create.js" afterDir="false" />
@@ -14,10 +15,17 @@
       <change beforePath="$PROJECT_DIR$/Resources/class-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/class-edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/class-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/class-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/login.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/apiURLs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/assets/js/apiURLs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/chosen.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/chosen.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/chosen.proto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/chosen.proto.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/class-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/assets/js/class-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/class-details-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/assets/js/prism.js" beforeDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/Resources/student-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/student-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/student-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/student-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/subject-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/subject-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/subject-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/subject-list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,38 +36,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="class-detail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/assets/js/class-detail.js">
+      <file leaf-file-name="student-detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/student-detail.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="740">
               <caret line="49" column="124" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="124" />
+=======
+            <state relative-caret-position="-4">
+              <caret line="254" column="22" lean-forward="true" selection-start-line="254" selection-start-column="22" selection-end-line="254" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="subject-list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/assets/js/subject-list.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
               <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="52" />
+=======
+      <file leaf-file-name="student-detail.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Resources/assets/js/student-detail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="107" column="24" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="24" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="account-create.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/assets/js/account-create.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="840">
               <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+=======
+      <file leaf-file-name="class-detail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/assets/js/class-detail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="93" column="90" selection-start-line="93" selection-start-column="90" selection-end-line="93" selection-end-column="90" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="student-list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/assets/js/student-list.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
               <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+=======
+      <file leaf-file-name="class-detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/class-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1333">
+              <caret line="246" column="48" selection-start-line="246" selection-start-column="48" selection-end-line="246" selection-end-column="48" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -76,6 +125,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< Updated upstream
       <find>aside</find>
       <find>Your Favorite Types of Bear</find>
       <find>&lt;td class=&quot;gradeForm&quot;&gt;</find>
@@ -89,6 +139,38 @@
       <find>for=&quot;validationServer02&quot;</find>
       <find>datatables</find>
       <find>data</find>
+=======
+      <find>data</find>
+      <find>https://localhost:44320/api/studentResourcesAPI/CreateAccount</find>
+      <find>&quot;https://studentresourcesapi.azurewebsites.net/api/StudentResourcesAPI/Login&quot;</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/Login'</find>
+      <find>var API_LOGIN \= \&quot;https\:\/\/studentresourcesapi\.azurewebsites\.net\/api\/StudentResourcesAPI\/Login\&quot;\;\n</find>
+      <find>AccountsIndex</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/AccountsIndex'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/ClazzsIndex'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/SubjectsIndex'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/CreateAccount'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/CreateClazz'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/CreateSubject'</find>
+      <find>h</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/ClazzDetails'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/StudentDetails'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/EditAccount'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/AddSubjects'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/AddStudents'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/AddGrades'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/DeleteClazz'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/DeleteStudentFromClazz'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/DeleteSubject'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/DeleteSubjectFromClazz'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/DeleteAccount'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/GetStudenClazzs'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/GetStudenGrades'</find>
+      <find>https://localhost:44320</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/EditClazz'</find>
+      <find>'https://localhost:44320/api/studentResourcesAPI/EditGrades'</find>
+      <find>swal</find>
+>>>>>>> Stashed changes
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,6 +195,7 @@
         <option value="$PROJECT_DIR$/Resources/student-list.html" />
         <option value="$PROJECT_DIR$/Resources/account-create.html" />
         <option value="$PROJECT_DIR$/Resources/class-create.html" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Resources/subject-create.html" />
         <option value="$PROJECT_DIR$/Resources/subject-list.html" />
         <option value="$PROJECT_DIR$/Resources/class-edit.html" />
@@ -121,6 +204,18 @@
         <option value="$PROJECT_DIR$/Resources/student-detail.html" />
         <option value="$PROJECT_DIR$/Resources/assets/js/subject-list.js" />
         <option value="$PROJECT_DIR$/Resources/assets/js/account-create.js" />
+=======
+        <option value="$PROJECT_DIR$/Resources/class-detail.html" />
+        <option value="$PROJECT_DIR$/Resources/class-edit.html" />
+        <option value="$PROJECT_DIR$/Resources/class-list.html" />
+        <option value="$PROJECT_DIR$/Resources/login.html" />
+        <option value="$PROJECT_DIR$/Resources/subject-create.html" />
+        <option value="$PROJECT_DIR$/Resources/subject-list.html" />
+        <option value="$PROJECT_DIR$/Resources/assets/js/login.js" />
+        <option value="$PROJECT_DIR$/Resources/assets/js/apiURLs.js" />
+        <option value="$PROJECT_DIR$/Resources/assets/js/class-detail.js" />
+        <option value="$PROJECT_DIR$/Resources/student-detail.html" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -198,7 +293,11 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected="JavaScript Debug.account-create.html">
+=======
+  <component name="RunManager" selected="JavaScript Debug.class-list.html">
+>>>>>>> Stashed changes
     <configuration name="account-create.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Manage_Student_Web/Resources/account-create.html" />
     <configuration name="class-create.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Manage_Student_Web/Resources/class-create.html" />
     <configuration name="class-detail.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Manage_Student_Web/Resources/class-detail.html" />
@@ -213,8 +312,13 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.account-create.html" />
+<<<<<<< Updated upstream
+=======
         <item itemvalue="JavaScript Debug.class-list.html" />
+        <item itemvalue="JavaScript Debug.student-list.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+>>>>>>> Stashed changes
+        <item itemvalue="JavaScript Debug.account-create.html" />
         <item itemvalue="JavaScript Debug.class-create.html" />
         <item itemvalue="JavaScript Debug.class-edit.html" />
         <item itemvalue="JavaScript Debug.class-detail.html" />
@@ -237,16 +341,26 @@
       <workItem from="1546879308494" duration="15745000" />
       <workItem from="1546897033934" duration="2420000" />
       <workItem from="1546899877078" duration="397000" />
+      <workItem from="1546936298751" duration="417000" />
+      <workItem from="1546936951509" duration="744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="32468000" />
+=======
+    <option name="totallyTimeSpent" value="37331000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -259,24 +373,19 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32985386" />
       <window_info id="Favorites" order="2" side_tool="true" />
+=======
+      <window_info anchor="bottom" id="Find" order="1" />
+>>>>>>> Stashed changes
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -513,6 +622,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Manage_Student_Web2/Manage_Student_Web/Resources/assets/js/account-create.js" />
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Resources/assets/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -528,6 +638,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/assets/js/student-detail.js">
+=======
+    <entry file="file://$PROJECT_DIR$/Resources/assets/js/class-create.js">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-900">
           <caret line="93" column="15" lean-forward="true" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
@@ -591,39 +704,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/account-create.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="439">
           <caret line="123" column="77" selection-start-line="123" selection-start-column="77" selection-end-line="123" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="754">
+          <caret line="192" column="48" lean-forward="true" selection-start-line="192" selection-end-line="193" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/class-create.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="597">
           <caret line="125" column="75" selection-start-line="125" selection-start-column="75" selection-end-line="125" selection-end-column="75" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="839">
+          <caret line="248" column="48" selection-start-line="248" selection-start-column="48" selection-end-line="248" selection-end-column="48" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/subject-create.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="623">
           <caret line="125" column="77" selection-start-line="125" selection-start-column="77" selection-end-line="125" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="723">
+          <caret line="219" column="48" selection-start-line="219" selection-start-column="48" selection-end-line="219" selection-end-column="48" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/subject-list.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="563">
           <caret line="125" column="75" selection-start-line="125" selection-start-column="75" selection-end-line="125" selection-end-column="75" />
           <folding>
@@ -641,33 +770,48 @@
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="730">
+          <caret line="191" column="48" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="48" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/class-detail.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="504">
           <caret line="130" column="76" selection-start-line="130" selection-start-column="76" selection-end-line="130" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="730">
+          <caret line="202" column="48" selection-start-line="202" selection-start-column="48" selection-end-line="202" selection-end-column="48" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/account-edit.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="323">
           <caret line="124" column="75" selection-start-line="124" selection-start-column="75" selection-end-line="124" selection-end-column="75" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="730">
+          <caret line="196" column="48" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="48" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/student-list.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="734">
           <caret line="122" selection-start-line="122" selection-end-line="123" selection-end-column="33" />
           <folding>
@@ -700,18 +844,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+=======
+        <state relative-caret-position="730">
+          <caret line="104" column="48" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/subject-create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="191" column="48" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/subject-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="188" column="48" selection-start-line="188" selection-start-column="48" selection-end-line="188" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/assets/js/apiURLs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/assets/js/login.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/class-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1333">
+          <caret line="246" column="48" selection-start-line="246" selection-start-column="48" selection-end-line="246" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/assets/js/class-details-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/student-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="254" column="22" lean-forward="true" selection-start-line="254" selection-start-column="22" selection-end-line="254" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#li#0;n#ul#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#main#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/assets/js/class-detail.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="740">
           <caret line="49" column="124" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="124" />
+=======
+        <state relative-caret-position="779">
+          <caret line="93" column="90" selection-start-line="93" selection-start-column="90" selection-end-line="93" selection-end-column="90" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/assets/js/subject-list.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="320">
           <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="52" />
         </state>
@@ -721,6 +932,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+=======
+        <state relative-caret-position="870">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="24" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
