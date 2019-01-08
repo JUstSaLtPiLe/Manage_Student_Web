@@ -19,7 +19,12 @@ $(".btn-submit").click(function (){
                 Cookies.set("token" , result.credential.accessToken);
                 Cookies.set("loggedUserRole" , result.roles);
                 Cookies.set("loggedUserName" , result.name);
-                window.location.href = "class-list.html";
+                if(Cookies.get("loggedUserRole") != null && Cookies.get("loggedUserRole").split("#").includes("Employee") == false){
+                    window.location.href = "student-detail.html?studentId=" + $("#loginForm").find('input[name="RollNumber"]').val().replace("b19aptech", "");
+                }
+                else{
+                    window.location.href = "class-list.html";
+                }
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
