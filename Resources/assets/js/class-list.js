@@ -16,8 +16,8 @@ $(document).ready(function () {
                 content += "<td>" + result[i].createdAt + "</td>";
                 content += "<td>" + result[i].updateAt + "</td>";
                 content += "<td>" + result[i].status + "</td>";
-                content += "<td><a href='#'> Edit </a>";
-                content += "<a href='/Manage_Student_Web/Resources/class-detail.html?classId=" + result[i].clazzId + "'>" + "Details </a>";
+                content += "<td><a href='class-edit.html?classId=" + result[i].clazzId + "'> Edit </a>";
+                content += "<a href='class-detail.html?classId=" + result[i].clazzId + "'>" + "Details </a>";
                 content += "<a class='delete-class " + result[i].clazzId + "'>" + "Delete </a>";
             }
             $("#classList").html(content);

@@ -19,7 +19,6 @@ $(document).ready(function () {
                 content += "</div>";
             }
             $("#roleCheckboxes").html(content);
-            console.log(result)
         },
         error: function (xhr, textStatus, errorThrown) {
             alert("error");
@@ -56,6 +55,7 @@ $(".btn-submit").click(function (){
         }),
         success: function (result) {
             swal("Create New Account Successful");
+            console.log(result);
         },
         error: function (xhr, textStatus, errorThrown) {
             alert("error");

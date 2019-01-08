@@ -67,7 +67,7 @@ $(document).ready(function () {
             "Address" : $("#editForm").find('input[name="Address"]').val(),
         };
         var password = $("#editForm").find('input[name="Password"]').val();
-        var status = $("#editForm").find('input[name="Status"]').val();
+        var status = $("#editForm").find('input[name="Status"]:checked').val();
         var accountId = window.location.href.split("=")[1];
         if(roleIds.length <= 0){
             swal("Phải chọn ít nhất 1 role");
