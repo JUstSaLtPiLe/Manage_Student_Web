@@ -19,7 +19,7 @@ $(".btn-submit").click(function (){
                 Cookies.set("token" , result.credential.accessToken);
                 Cookies.set("loggedUserRole" , result.roles);
                 Cookies.set("loggedUserName" , result.name);
-                window.location.href = "/Manage_Student_Web/Resources/class-list.html";
+                window.location.href = "class-list.html";
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {

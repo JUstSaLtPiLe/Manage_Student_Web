@@ -7,7 +7,7 @@ $(document).ready(function () {
         Cookies.remove('token');
         Cookies.remove("loggedUserRole");
         Cookies.remove("loggedUserName");
-        window.location.href = "/Manage_Student_Web/Resources/login.html";
+        window.location.href = "login.html";
     }
 
     $("#logout").click(function () {

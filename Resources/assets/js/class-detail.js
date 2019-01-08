@@ -233,6 +233,7 @@ $(document).ready(function () {
                 swal("Successful");
                 $(".gradeForms").addClass("hidden");
                 $(".subject-grade").addClass("hidden");
+                $(".gradeForms-title").addClass("hidden");
             },
             error: function (xhr, textStatus, errorThrown) {
                 if (xhr.status == 409) {

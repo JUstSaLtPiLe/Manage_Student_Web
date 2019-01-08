@@ -41,11 +41,8 @@ $(document).ready(function () {
                 url: API_DeleteClazz,
                 data: JSON.stringify(classId),
                 success: function (result) {
-                    swal({title: "Deleted!", type: "success"},
-                        function(){
-                            if(!alert('Deleted!')){window.location.reload();}
-                        }
-                    );
+                    alert("Deleted!");
+                    window.location.reload();
                 },
                 error: function (xhr, textStatus, errorThrown) {
                 }
