@@ -67,25 +67,53 @@ $(document).ready(function () {
         });
         grades = JSON.stringify(grades);
         console.log(grades);
-        $.ajax({
-            accepts: 'application/json',
-            contentType: 'application/json',
-            type: 'POST',
-            headers: {
-                "Authorization": Cookies.get("token"),
-                "Role": Cookies.get("loggedUserRole"),
-            },
-            url: 'https://localhost:44320/api/studentResourcesAPI/AddGrades',
-            data: grades,
-            success: function (){
-                swal("Successful");
-            },
-            error: function (xhr, textStatus, errorThrown) {
-                if (xhr.status == 409) {
-                    alert("Sinh vien da co diem mon hoc nay");
+        if($("#gradeAction").val() == "editGrade"){
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json',
+                type: 'POST',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                    "Role": Cookies.get("loggedUserRole"),
+                },
+                url: 'https://localhost:44320/api/studentResourcesAPI/EditGrades',
+                data: grades,
+                success: function (result, textStatus, jqXHR){
+                    if(jqXHR.status == 204){
+                        swal("Sinh viên chưa có điểm môn học này");
+                    }
+                    else {
+                        swal("Success");
+                    };
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    if (xhr.status == 409) {
+                        alert("Sinh vien da co diem mon hoc nay");
+                    }
                 }
-            }
-        });
+            });
+        }
+        else {
+            $.ajax({
+                accepts: 'application/json',
+                contentType: 'application/json',
+                type: 'POST',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                    "Role": Cookies.get("loggedUserRole"),
+                },
+                url: 'https://localhost:44320/api/studentResourcesAPI/AddGrades',
+                data: grades,
+                success: function (){
+                    swal("Successful");
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    if (xhr.status == 409) {
+                        alert("Sinh vien da co diem mon hoc nay");
+                    }
+                }
+            });
+        }
     });
 
     $('#showList').click(function(){
@@ -153,48 +181,54 @@ $(document).ready(function () {
 
     $("#viewGradeBtn").click(function () {
        $("#select-subject").show();
+       $("#gradeAction").val("viewGrade");
+    });
+
+    $("#editGradeBtn").click(function () {
+        document.getElementById('id01').style.display='block';
+        $("#gradeAction").val("editGrade");
     });
 
     $("#select-subject").on('change' , function (){
         var studentId = [];
         studentId.push($(this).val());
         studentId.push(window.location.href.split("=")[1]);
-        $.ajax({
-            type: 'POST',
-            accepts: 'application/json',
-            contentType: 'application/json',
-            url: 'https://localhost:44320/api/studentResourcesAPI/GetStudenGrades',
-            headers: {
-                "Authorization": Cookies.get("token"),
-            },
-            data: JSON.stringify(studentId),
-            success: function (result, textStatus, jqXHR) {
-                if(jqXHR.status == 204){
-                    swal("Sinh viên chưa có điểm môn học này");
-                }
-                else{
-                    var content = "";
-                            content += "<tr>";
-                            content += "<td class='score'>" + result.assignmentGrade + "</td>";
-                            content += "<td class='score'>" + result.theoricalGrade + "</td>";
-                            content += "<td class='score'>" + result.praticalGrade + "</td>";
-                            content += "</tr>";
-                        $("#gradeList").html(content);
-                    var score = document.getElementsByClassName("score");
-                    for (var i = 0 ; i < score.length; i++){
-                        score[i].style.fontWeight = "bold";
-                        if(score[i].innerHTML < 5){
-                            score[i].style.color = "red";
-                        }
-                        if(score[i].innerHTML >= 5){
-                            score[i].style.color = "green";
-                        }
+            $.ajax({
+                type: 'POST',
+                accepts: 'application/json',
+                contentType: 'application/json',
+                url: 'https://localhost:44320/api/studentResourcesAPI/GetStudenGrades',
+                headers: {
+                    "Authorization": Cookies.get("token"),
+                },
+                data: JSON.stringify(studentId),
+                success: function (result, textStatus, jqXHR) {
+                    if(jqXHR.status == 204){
+                        swal("Sinh viên chưa có điểm môn học này");
                     }
+                    else{
+                        var content = "";
+                        content += "<tr>";
+                        content += "<td class='score'>" + result.assignmentGrade + "</td>";
+                        content += "<td class='score'>" + result.theoricalGrade + "</td>";
+                        content += "<td class='score'>" + result.praticalGrade + "</td>";
+                        content += "</tr>";
+                        $("#gradeList").html(content);
+                        var score = document.getElementsByClassName("score");
+                        for (var i = 0 ; i < score.length; i++){
+                            score[i].style.fontWeight = "bold";
+                            if(score[i].innerHTML < 5){
+                                score[i].style.color = "red";
+                            }
+                            if(score[i].innerHTML >= 5){
+                                score[i].style.color = "green";
+                            }
+                        }
                         $("#gradeTable").show();
+                    }
+                },
+                error: function () {
                 }
-            },
-            error: function () {
-            }
-        });
+            });
     });
 });
