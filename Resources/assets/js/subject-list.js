@@ -3,7 +3,7 @@ $(document).ready(function () {
         type: 'GET',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/SubjectsIndex',
+        url: API_SubjectsIndex,
         headers: {
             "Authorization": Cookies.get("token"),
         },

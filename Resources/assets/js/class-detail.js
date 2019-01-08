@@ -5,7 +5,7 @@ $(document).ready(function () {
         type: 'GET',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/SubjectsIndex',
+        url: API_SubjectsIndex,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -32,7 +32,7 @@ $(document).ready(function () {
         type: 'POST',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/ClazzDetails',
+        url: API_ClazzDetails,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -114,7 +114,7 @@ $(document).ready(function () {
         type: 'GET',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/AccountsIndex',
+        url: API_AccountsIndex,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -147,7 +147,7 @@ $(document).ready(function () {
             type: 'POST',
             accepts: 'application/json',
             contentType: 'application/json',
-            url: 'https://localhost:44320/api/studentResourcesAPI/AddSubjects',
+            url: API_AddSubjects,
             headers: {
                 "Authorization": Cookies.get("token"),
                 "Role": Cookies.get("loggedUserRole"),
@@ -172,7 +172,7 @@ $(document).ready(function () {
             type: 'POST',
             accepts: 'application/json',
             contentType: 'application/json',
-            url: 'https://localhost:44320/api/studentResourcesAPI/AddStudents',
+            url: API_AddStudents,
             headers: {
                 "Authorization": Cookies.get("token"),
                 "Role": Cookies.get("loggedUserRole"),
@@ -227,7 +227,7 @@ $(document).ready(function () {
                 "Authorization": Cookies.get("token"),
                 "Role": Cookies.get("loggedUserRole"),
             },
-            url: 'https://localhost:44320/api/studentResourcesAPI/AddGrades',
+            url: API_AddGrades,
             data: grades,
             success: function (result) {
                 swal("Successful");
@@ -242,114 +242,4 @@ $(document).ready(function () {
         });
     });
     //**********************
-
-    $(document).on('click', '.delete-student' ,function(){
-        if(confirm("Delete this Student?")){
-            var accountId = $(this).attr("class").split(' ')[1];
-            $.ajax({
-                accepts: 'application/json',
-                contentType: 'application/json',
-                type: 'POST',
-                headers: {
-                    "Authorization": Cookies.get("token"),
-                    "Role": Cookies.get("loggedUserRole"),
-                },
-                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteAccount',
-                data: JSON.stringify(accountId),
-                success: function (result) {
-                    swal({title: "Deleted!", type: "success"},
-                        function(){
-                            if(!alert('Deleted!')){window.location.reload();}
-                        }
-                    );
-                },
-                error: function (xhr, textStatus, errorThrown) {
-                }
-            });
-        }
-    });
-
-    $(document).on('click', '.delete-student-from-class' ,function(){
-        if(confirm("Delete this Student From Class?")){
-            var studentClazz = {
-                "AccountId" : $(this).attr("class").split(' ')[1],
-                "ClazzId" : window.location.href.split("=")[1],
-            };
-            $.ajax({
-                accepts: 'application/json',
-                contentType: 'application/json',
-                type: 'POST',
-                headers: {
-                    "Authorization": Cookies.get("token"),
-                    "Role": Cookies.get("loggedUserRole"),
-                },
-                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteStudentFromClazz',
-                data: JSON.stringify(studentClazz),
-                success: function (result) {
-                    swal({title: "Deleted!", type: "success"},
-                        function(){
-                            if(!alert('Deleted!')){window.location.reload();}
-                        }
-                    );
-                },
-                error: function (xhr, textStatus, errorThrown) {
-                }
-            });
-        }
-    });
-
-    $(document).on('click', '.delete-subject' ,function(){
-        if(confirm("Delete this Subject?")){
-            var subjectId = $(this).attr("class").split(' ')[1];
-            $.ajax({
-                accepts: 'application/json',
-                contentType: 'application/json',
-                type: 'POST',
-                headers: {
-                    "Authorization": Cookies.get("token"),
-                    "Role": Cookies.get("loggedUserRole"),
-                },
-                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteSubject',
-                data: JSON.stringify(subjectId),
-                success: function (result) {
-                    swal({title: "Deleted!", type: "success"},
-                        function(){
-                            if(!alert('Deleted!')){window.location.reload();}
-                        }
-                    );
-                },
-                error: function (xhr, textStatus, errorThrown) {
-                }
-            });
-        }
-    });
-
-    $(document).on('click', '.delete-subject-from-class' ,function(){
-        if(confirm("Delete this Subject From Class?")){
-            var clazzSubject = {
-                "SubjectId" : $(this).attr("class").split(' ')[1],
-                "ClazzId" : window.location.href.split("=")[1],
-            };
-            $.ajax({
-                accepts: 'application/json',
-                contentType: 'application/json',
-                type: 'POST',
-                headers: {
-                    "Authorization": Cookies.get("token"),
-                    "Role": Cookies.get("loggedUserRole"),
-                },
-                url: 'https://localhost:44320/api/studentResourcesAPI/DeleteSubjectFromClazz',
-                data: JSON.stringify(clazzSubject),
-                success: function (result) {
-                    swal({title: "Deleted!", type: "success"},
-                        function(){
-                            if(!alert('Deleted!')){window.location.reload();}
-                        }
-                    );
-                },
-                error: function (xhr, textStatus, errorThrown) {
-                }
-            });
-        }
-    });
 });

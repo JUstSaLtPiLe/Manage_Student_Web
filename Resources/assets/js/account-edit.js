@@ -3,7 +3,7 @@ $(document).ready(function () {
         type: 'GET',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/CreateAccount',
+        url: API_CreateAccount,
         headers: {
             "Authorization": Cookies.get("token"),
             "Role": Cookies.get("loggedUserRole")
@@ -29,7 +29,7 @@ $(document).ready(function () {
         type: 'POST',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/StudentDetails',
+        url: API_StudentDetails,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -77,7 +77,7 @@ $(document).ready(function () {
                 type: 'POST',
                 accepts: 'application/json',
                 contentType: 'application/json',
-                url: 'https://localhost:44320/api/studentResourcesAPI/EditAccount',
+                url: API_EditAccount,
                 headers: {
                     "Authorization": Cookies.get("token"),
                 },

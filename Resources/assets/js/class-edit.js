@@ -3,7 +3,7 @@ $(document).ready(function () {
         type: 'POST',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/ClazzDetails',
+        url: API_ClazzDetails,
         headers: {
             "Authorization": Cookies.get("token"),
         },
@@ -34,7 +34,7 @@ $(document).ready(function () {
                 type: 'POST',
                 accepts: 'application/json',
                 contentType: 'application/json',
-                url: 'https://localhost:44320/api/studentResourcesAPI/EditClazz',
+                url: API_EditClazz,
                 headers: {
                     "Authorization": Cookies.get("token"),
                     "Role": Cookies.get("loggedUserRole")
