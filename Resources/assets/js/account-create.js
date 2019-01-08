@@ -3,7 +3,7 @@ $(document).ready(function () {
         type: 'GET',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/CreateAccount',
+        url: API_CreateAccount,
         headers: {
             "Authorization": Cookies.get("token"),
             "Role": Cookies.get("loggedUserRole")
@@ -43,7 +43,7 @@ $(".btn-submit").click(function (){
         type: 'POST',
         accepts: 'application/json',
         contentType: 'application/json',
-        url: 'https://localhost:44320/api/studentResourcesAPI/CreateAccount',
+        url: API_CreateAccount,
         traditional: true,
         headers: {
             "Authorization": Cookies.get("token"),
