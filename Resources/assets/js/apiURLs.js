@@ -19,6 +19,7 @@ var API_DeleteAccount = "https://studentresourcesapi.azurewebsites.net/api/Stude
 var API_GetStudenClazzs = "https://studentresourcesapi.azurewebsites.net/api/StudentResourcesAPI/GetStudenClazzs";
 var API_EditGrades = "https://studentresourcesapi.azurewebsites.net/api/StudentResourcesAPI/EditGrades";
 var API_EditClazz = "https://studentresourcesapi.azurewebsites.net/api/StudentResourcesAPI/EditClazz";
+var API_GetStudenGrades = "https://studentresourcesapi.azurewebsites.net/api/StudentResourcesAPI/GetStudenGrades";
 
 $(document).on('click', '.delete-student' ,function(){
     if(confirm("Delete this Student?")){
