@@ -1,4 +1,30 @@
 $(document).ready(function () {
+    $("#userName").text("Welcome " + Cookies.get("loggedUserName"));
+    var token = Cookies.get("token");
+    var role = Cookies.get("loggedUserRole");
+    if(token == null || role == null){
+        alert(("You don't have permission to view this page"));
+        Cookies.remove('token');
+        Cookies.remove("loggedUserRole");
+        Cookies.remove("loggedUserName");
+        window.location.href = "login.html";
+    }
+    else if(role.split("#").includes("Employee") == false){
+        $(".w3-green").remove();
+        $("#editGradeBtn").remove();
+        $(".site-sidebar").remove();
+    }
+
+    $("#logout").click(function () {
+        Cookies.remove('token');
+        Cookies.remove("loggedUserRole");
+        Cookies.remove("loggedUserName");
+        window.location.href = "/Manage_Student_Web/Resources/login.html";
+    });
+
+
+
+    $("#edit").attr("href", "account-edit.html?studentId=" + window.location.href.split("=")[1]);
     $.ajax({
         type: 'POST',
         accepts: 'application/json',

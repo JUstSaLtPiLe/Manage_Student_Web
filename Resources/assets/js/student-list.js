@@ -19,9 +19,9 @@ $(document).ready(function () {
                 content += "<td><ul>";
                 content += "<li>" + result.studentAccounts[i].role.name + "</li>";
                 content += "</ul></td>";
-                content += "<td><a href='#'> Edit </a>";
-                content += "<a href='#'>Details </a>";
-                content += "<a href='#'> Delete </a>";
+                content += "<td><a href='account-edit.html?studentId=" + result.studentAccounts[i].account.accountId + "'> Edit </a>";
+                content += "<a href='student-detail.html?studentId=" + result.studentAccounts[i].account.accountId + "'>" + " Details </a>";
+                content += "<a class='delete-student " + result.studentAccounts[i].account.accountId + "'>" + " Delete </a>";
                 content += "</td>";
                 content += "</tr>";
             }
